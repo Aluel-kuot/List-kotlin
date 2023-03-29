@@ -13,19 +13,18 @@ fun main() {
 //questions
 //quiz1
 fun words (){
-    val evenIndices=listOf("one","two","three","four","five","six","seven","eight","nine","ten")
-//    val even= evenIndices.filter {evenIndex -> evenIndex 2==0}
-
-
-
+//    val evenIndices=listOf("one","two","three","four","five","six","seven","eight","nine","ten")
+//    val even= evenIndices.filter {evenIndex -> (evenIndex) %2==0}
+//
 }
 //quiz2
-fun people():Double{
+fun people():List<Double>{
     val heights=listOf(1.3,2.0,1.5,2.1)
     var height=heights.average()
      var total=heights.sum()
-    return height
-    return total
+    val new=listOf(height,total)
+    return new
+
 }
 //quiz3
 data class Persons(var name:String,var age:Int,var height:Double,var weight:Double)
